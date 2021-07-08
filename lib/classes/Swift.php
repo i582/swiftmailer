@@ -40,6 +40,8 @@ abstract class Swift
      */
     public static function autoload($class)
     {
+        $a = 100;
+
         // Don't interfere with other autoloaders
         if (0 !== strpos($class, 'Swift_')) {
             return;
